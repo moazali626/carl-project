@@ -7,7 +7,7 @@ const RegisterUser = async (values) => {
   };
 
   return await axios
-    .post(`${process.env.REACT_APP_PROD_URL}/register/4000`, data)
+    .post(`${process.env.REACT_APP_PROD_URL}/register`, data)
     .then((response) => {
       if (response && response.status === 200) {
         return {

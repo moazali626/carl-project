@@ -5,7 +5,7 @@ const GetAllUsers = async () => {
 
   return await axios
     .post(
-      `${process.env.REACT_APP_PROD_URL}/get-all-users/4000`,
+      `${process.env.REACT_APP_PROD_URL}/get-all-users`,
       {},
       {
         headers: {

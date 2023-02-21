@@ -7,7 +7,7 @@ const LoginUser = async (values) => {
   };
 
   return await axios
-    .post(`${process.env.REACT_APP_PROD_URL}/login/4000`, data)
+    .post(`${process.env.REACT_APP_PROD_URL}/login`, data)
     .then((response) => {
       if (response && response.status === 200) {
         localStorage.setItem("token", response?.data?.data?.token);
