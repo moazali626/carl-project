@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SF";
+  src: url("../public/fonts/sf-ui.otf");
+}
